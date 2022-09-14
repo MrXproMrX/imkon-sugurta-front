@@ -1,0 +1,90 @@
+// meeting start
+
+.meeting{
+    position: relative;
+    margin-bottom: 120px;
+
+    &__list{
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        grid-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        max-width: 390px;
+        height: auto;
+        flex: 0 0 32%;
+    }
+
+    &__img{
+        @include fiximg(100%,240px,true);
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &__title__h4{
+        @include fontAll(1rem,600,$link);
+        line-height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-color:rgba(80, 134, 234, 0.8);
+        margin-bottom:0;
+    }
+
+    &__title__h2{
+        @include fontAll(1.5rem,600,$text);
+        line-height: 110%;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        @include fontAll(1.125rem,400,$text);
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    &__link{
+        @include fontAll(1rem,600,$blue);
+        line-height:100%;
+    }
+}
+
+// meeting end
+
+
+
+@media (max-width:1150px){
+    .meeting__item {
+        max-width: 100%;
+        flex: 0 0 47%;
+    }
+
+    .meeting__title__h2 {
+        font-size: 1.375rem;
+    }
+
+    .meeting__text{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
+
+
+@media (max-width:700px){
+    .meeting__item {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .meeting__img{
+        height: auto;
+    }
+
+    .meeting__title__h4 {
+        padding: 15px;
+    }
+}

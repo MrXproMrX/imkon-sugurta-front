@@ -1,0 +1,24 @@
+.custom-html-content {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			position: relative;
+			padding-left: 12px;
+			margin-bottom: 5px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background-color: $app-primary;
+				top: 9px;
+				left: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.about-page {
+	.about-img-wrapper {
+		width: 100%;
+		height: 440px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.video-card-img-wrapper {
+		width: 100%;
+		max-width: 500px;
+		height: 350px;
+		margin: 0 auto;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.play-btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: $app-primary;
+			color: $app-white;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.about-privileges {
+		background-color: $app-primary;
+		color: $app-white;
+		padding: 3rem 0 3.5rem;
+
+		.single-privilege {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 0 2rem;
+
+			.single-privilege-img-wrapper {
+				width: 70px;
+				height: 70px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+
+			.single-privilege-title {
+				font-size: 1rem;
+				font-weight: 500;
+				margin-top: 9px;
+			}
+		}
+	}
+}

@@ -1,0 +1,171 @@
+.bs-stepper .step-trigger {
+	display: inline-flex;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1rem;
+	font-size: 0.85rem;
+	font-weight: 600;
+	line-height: 1.5;
+	color: $app-dark;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	background-color: transparent;
+	border: none;
+	border-radius: 0.25rem;
+	transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+.bs-stepper .step-trigger:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+
+.bs-stepper .step.step-done {
+	.bs-stepper-circle {
+		color: $app-primary;
+	}
+}
+
+.bs-stepper .step-trigger.disabled,
+.bs-stepper .step-trigger:disabled {
+	pointer-events: none;
+}
+
+.bs-stepper .step-trigger:hover {
+	color: $app-primary;
+}
+
+.bs-stepper .step {
+	width: 145px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	.bs-stepper-label {
+		width: 100%;
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+@media (max-width: 520px) {
+	.bs-stepper .step-trigger {
+		flex-direction: column;
+		padding: 10px;
+	}
+}
+
+.bs-stepper-label {
+	display: inline-block;
+	margin: 0.25rem;
+}
+
+.bs-stepper-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+@media (max-width: 520px) {
+	.bs-stepper-header {
+		margin: 0 -10px;
+		text-align: center;
+	}
+}
+
+.bs-stepper-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	margin: 0.25rem;
+	line-height: 1;
+	color: $app-dark;
+	background-color: $app-light;
+	border-radius: 16px;
+}
+
+.active .bs-stepper-circle {
+	background-color: $app-primary;
+	color: $app-white;
+}
+
+.bs-stepper-content {
+	padding: 0 20px 20px;
+}
+
+@media (max-width: 520px) {
+	.bs-stepper-content {
+		padding: 0;
+	}
+}
+
+.bs-stepper.vertical {
+	display: flex;
+}
+
+.bs-stepper.vertical .bs-stepper-header {
+	flex-direction: column;
+	align-items: stretch;
+	margin: 0;
+}
+
+.bs-stepper.vertical .bs-stepper-pane,
+.bs-stepper.vertical .content {
+	display: block;
+}
+
+.bs-stepper.vertical .bs-stepper-pane:not(.fade),
+.bs-stepper.vertical .content:not(.fade) {
+	display: block;
+	visibility: hidden;
+}
+
+.bs-stepper .content:not(.fade),
+.bs-stepper-pane:not(.fade) {
+	display: none;
+}
+
+.bs-stepper .content.fade,
+.bs-stepper-pane.fade {
+	visibility: hidden;
+	transition-duration: 0.3s;
+	transition-property: opacity;
+}
+
+.bs-stepper .content.fade.active,
+.bs-stepper-pane.fade.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.bs-stepper .content.active:not(.fade),
+.bs-stepper-pane.active:not(.fade) {
+	display: block;
+	visibility: visible;
+}
+
+.bs-stepper .content.dstepper-block,
+.bs-stepper-pane.dstepper-block {
+	display: block;
+}
+
+.bs-stepper:not(.vertical) .bs-stepper-pane.dstepper-none,
+.bs-stepper:not(.vertical) .content.dstepper-none {
+	display: none;
+}
+
+.vertical .bs-stepper-pane.fade.dstepper-none,
+.vertical .content.fade.dstepper-none {
+	visibility: hidden;
+}

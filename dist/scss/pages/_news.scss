@@ -1,0 +1,25 @@
+.single-news-page {
+	.single-news-img-wrapper {
+		width: 100%;
+		height: 440px;
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.single-news-date {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($app-primary, 0.8);
+			color: $app-white;
+			padding: 10px;
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+}

@@ -1,0 +1,214 @@
+.personalCabinet-flex-content {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.personalCabinet-page {
+	flex: 1 0 auto;
+
+	.personalCabinet-nav {
+		background-color: #e8eef8;
+		padding: 1rem 1.25rem;
+		justify-content: center;
+		align-items: center;
+
+		.nav-item {
+			& > button {
+				background-color: transparent;
+				border: none;
+				padding: 0.25rem 0.5rem;
+				margin: 0 30px;
+				font-size: 1rem;
+				font-weight: 600;
+				color: $app-dark;
+
+				&.active {
+					color: $app-primary;
+				}
+			}
+		}
+	}
+
+	.my-policies-tab {
+		.my-policies-card {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border: 1px solid #dfdfdf;
+			margin-top: calc(3rem + 75px);
+			background-color: $app-white;
+			color: $app-dark;
+			transition: background-color 450ms;
+
+			.my-policies-card-img-wrapper {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				overflow: hidden;
+				align-items: center;
+				transform: translateY(-75px);
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.my-policies-card-content {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				margin-top: -65px;
+				padding: 0.5rem 1.5rem;
+			}
+
+			.my-policies-card-comment {
+				display: block;
+				font-size: 1.125rem;
+				font-weight: 400;
+				color: $app-primary;
+			}
+
+			.my-policies-card-title {
+				font-size: 1.5rem;
+				font-weight: 600;
+				margin-bottom: 1.125rem;
+			}
+
+			.my-policies-card-title-sm {
+				font-size: 1.25rem;
+				font-weight: 600;
+			}
+
+			.my-policies-desc {
+				width: 100%;
+				padding: 14px 10px;
+				border-top: 1px solid #dfdfdf;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.refund-status-tab {
+		.table > :not(:last-child) > :last-child > * {
+			border-bottom-color: #dee2e6;
+		}
+
+		.table > :not(caption) > * > * {
+			vertical-align: middle;
+		}
+	}
+
+	.personalCabinetNavShowMore-dropdown {
+		display: none;
+
+		.personal-cabinet-nav-dropdown {
+			li {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: 1300px) {
+		.personalCabinet-nav {
+			.nav-item:nth-child(6) {
+				display: none;
+			}
+		}
+
+		.personalCabinetNavShowMore-dropdown {
+			display: block;
+
+			.personal-cabinet-nav-dropdown {
+				li:nth-child(6) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1130px) {
+		.personalCabinet-nav {
+			.nav-item:nth-child(5) {
+				display: none;
+			}
+		}
+
+		.personalCabinetNavShowMore-dropdown {
+			.personal-cabinet-nav-dropdown {
+				li:nth-child(5) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 930px) {
+		.personalCabinet-nav {
+			.nav-item:nth-child(4) {
+				display: none;
+			}
+		}
+
+		.personalCabinetNavShowMore-dropdown {
+			.personal-cabinet-nav-dropdown {
+				li:nth-child(4) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 650px) {
+		.personalCabinet-nav {
+			.nav-item:nth-child(3) {
+				display: none;
+			}
+		}
+
+		.personalCabinetNavShowMore-dropdown {
+			.personal-cabinet-nav-dropdown {
+				li:nth-child(3) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 438px) {
+		.personalCabinet-nav {
+			justify-content: flex-end;
+
+			.nav-item:nth-child(2) {
+				display: none;
+			}
+
+			.nav-item:nth-child(1) {
+				display: none;
+			}
+		}
+
+		.personalCabinetNavShowMore-dropdown {
+			.personal-cabinet-nav-dropdown {
+				li:nth-child(2) {
+					display: block;
+				}
+
+				li:nth-child(1) {
+					display: block;
+				}
+			}
+		}
+	}
+}

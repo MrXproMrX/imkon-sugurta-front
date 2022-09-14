@@ -1,0 +1,157 @@
+.svg-dimmed {
+	color: $app-white;
+	opacity: 0.4;
+}
+
+.btn-icon {
+	padding: 4px;
+}
+
+.custom-btn--sm {
+	padding: 0.5rem 1.5rem !important;
+}
+
+.main-title-xxl {
+	font-size: 3.75rem;
+	font-weight: 700;
+}
+
+.main-title-xl {
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+.main-title-lg {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.main-title {
+	font-size: 2.75rem;
+	font-weight: 700;
+}
+
+.main-title-md {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.main-title-sm {
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.main-title-xs {
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+.main-text {
+	font-size: 1.125rem;
+	line-height: 1.5;
+
+	@media (max-width: 780px) {
+		font-size: 1rem;
+		line-height: normal;
+	}
+}
+
+.main-bold-comment--sm {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.custom-light-btn {
+	background-color: $app-white;
+	border-radius: 6px;
+	padding: 0.75rem 1.5rem;
+	color: $app-primary;
+	font-weight: 600;
+	transition: background-color 250ms;
+
+	&:hover {
+		color: $app-white;
+		background-color: $app-primary;
+	}
+}
+
+.custom-red-btn {
+	background-color: $app-red;
+	border-radius: 6px;
+	padding: 0.75rem 1.5rem;
+	color: $app-white;
+	font-weight: 600;
+	transition: background-color 250ms;
+
+	&:hover {
+		color: $app-white;
+		background-color: $app-red-dark;
+	}
+}
+
+.custom-primary-btn {
+	background-color: $app-primary;
+	border-radius: 6px;
+	padding: 0.75rem 1.5rem;
+	color: $app-white;
+	font-weight: 600;
+	transition: background-color 250ms;
+
+	&:hover {
+		color: $app-white;
+		background-color: $app-primary-dark;
+	}
+}
+
+.custom-primary-btn--outline {
+	background-color: rgba($app-primary, 0.2);
+	border-radius: 6px;
+	padding: 0.75rem 1.5rem;
+	color: $app-primary;
+	font-weight: 600;
+	transition: background-color 250ms;
+
+	&:hover {
+		background-color: rgba($app-primary, 0.45);
+		color: $app-blue-dark;
+	}
+}
+
+.custom-green-btn {
+	background-color: $app-green;
+	border-radius: 6px;
+	padding: 0.75rem 1.5rem;
+	color: $app-white;
+	font-weight: 600;
+	transition: background-color 250ms;
+
+	&:hover {
+		color: $app-white;
+		background-color: $app-green-dark;
+	}
+}
+
+.custom-btn-link {
+	text-decoration: none;
+	padding: unset;
+	margin: 10px 0;
+}
+
+.single-img--content-page {
+	.custom-img-wrapper {
+		width: 100%;
+		height: 440px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+
+	.custom-content {
+		margin-top: 2rem;
+		font-size: 1rem;
+	}
+}

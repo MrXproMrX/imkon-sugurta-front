@@ -1,0 +1,40 @@
+// meeting_in start
+
+.meeting_in{
+    position: relative;
+    margin-bottom: 120px;
+
+    &__img{
+        @include fiximg(100%,440px,true);
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    &__text{
+        @include fontAll(1.125rem,400,$text);
+        line-height: 32px;
+        text-align: justify;
+    }
+}
+
+// meeting_in end
+
+
+@media (max-width:1000px){
+    .meeting_in__img{
+        margin-bottom: 30px;
+        height: 350px;
+    }
+}
+
+
+@media (max-width:800px){
+    .meeting_in__img{
+        height: auto;
+    }
+
+    .meeting_in__text {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
